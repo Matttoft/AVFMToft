@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<!-- Matt Toft ASD1201 Proj 1 -->
+
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>Axis Church</title>
+		<meta name="description" content="" />
+		<meta name="keyword" content="" />
+		<meta name="robots" content="" />
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+		<meta http-equiv="cleartype" content="on">
+	
+		<link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" rel="stylesheet" type="text/css" />	
+		<link rel="stylesheet" type="text/css" href="css/indexstyle.css" />
+		<script src="js/libs/modernizr.custom.min.js"></script>
+	
+	
+
+
+	</head>
+	
+		
+	<body>
+		
+		
+		<div data-role="page" id="main" data-theme="a">
+			<div data-role="header" id="header">
+				<h2>AXIS MINISTRY APP</h2>
+			</div>
+			
+			<div data-role="header" id="header">
+					<center> <img src="img/logo.gif" /> </center>
+				</div>
+		<div id="getdata" data-role="fieldcontain">
+				<div id="get-data-buttons">
+					<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<a href="#" data-role="button" data-theme="b" id="json">JSON</a>
+						</div>
+					
+						<div class="ui-block-b">
+							<a href="#" data-role="button" data-theme="b" id="xml">XML</a>
+						</div>
+						
+						<div class="ui-block-a">
+							<a href="#" data-role="button" data-theme="b" id="csv">CSV</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<nav>
+				<a button type="button" href="additem.html" data-transition='slide' data-back='true'>SIGN UP</a>
+			</nav>	
+			
+			
+			
+		<ul data-role="listview" data-theme="a" data-divider-theme="a">
+			<li data-role="list-divider">Browse Ministries:</li>
+					
+			
+		</ul>
+		
+			<div id="browse" data-role="content" data-filter="true" data-theme="a">
+				<ul data-role="listview" data-theme="c">
+					
+	
+						<div data-role="collapsible" data-theme='c'>
+							<h6>Impressions</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#impressionsleader">
+						Leaders</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#impressions">
+						Members</a>
+						</li>
+					</ul>
+					</div>
+				
+					
+						
+						<div data-role="collapsible" data-theme='c'>
+							<h6>Usher</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#usherleader">
+						Leaders</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#usher">
+						Members</a>
+						</li>
+					</ul>
+					</div>
+						
+						<div data-role="collapsible" data-theme='c'>
+							<h6>Worship</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#worshipleader">
+						Leaders</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#worship">
+						Members</a>
+						</li>
+					</ul>
+					</div>
+					
+						<div data-role="collapsible" data-theme='c'>
+							<h6>Tech</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#techleader">
+						Leaders</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#tech">
+						Members</a>
+						</li>
+					</ul>
+					</div>
+							
+						<div data-role="collapsible" data-theme='c'>
+							<h6>Nursery</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#nurseryleader">
+						Leaders</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#nursery">
+						Members</a>
+						</li>
+					</ul>
+					</div>
+												
+					<br>
+					<li>
+					<div data-theme='a'>
+					<center><a data-theme='c' data-role="button" href='#search'>Search</a></center>
+					</div>
+					</li>
+				</ul>
+				<br>
+							<div data-role="footer">		
+	<div data-role="navbar" data-theme='c'>
+		<ul>
+			<li><a href="http://github.com/Matttoft/ASDMTOFT">REPO</a></li>
+		
+			<li><a href="http://matttoft.github.com/ASDMTOFT">LIVE</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+			</div>
+		
+			
+		</div> 
+		
+		<div data-role="page" id="JSON" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+
+		</div>
+		
+		<div data-role="page" id="XML" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+
+		</div>
+			
+		<div data-role="page" id="CSV" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+
+		</div>
+	
+	
+		<div data-role="page" id="impressions" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Impressions</h3>
+						<p>This ministry entails greeting at the entrance of the church and staffing the information desk.</p>
+					</li>
+					<nav>
+						<a button type="button" href="#usher" data-transition='slide' data-back='true'>NEXT MINISTRY</a>
+					</nav>	
+					<li data-theme="d"><a href="#egeorge"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>Eddie George</h3></center></a></li>
+					<li data-theme="d"><a href="#bhoying"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>Bobby Hoying</h3></center></a></li>
+					<li data-theme="d"><a href="#tglenn"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>Terry Glenn</h3></center></a></li>								
+				</ul>
+				
+			</div>
+			
+			<div data-role="page" id="usher" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Usher</h3>
+						<p>This ministry entails handing out bulletins collecting offering and distributing communion.</p>
+					</li>
+						<nav>
+						<a button type="button" href="#worship" data-transition='slide' data-back='true'>NEXT MINISTRY</a>
+						</nav>	
+					<li data-theme="d"><a href="#opace"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>Orlando Pace</h3></center></a></li>
+					<li data-theme="d"><a href="#jgermaine"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>Joe Germaine</h3></center></a></li>
+					<li data-theme="d"><a href="#dboston"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>David Boston</h3></center></a></li>								
+				</ul>
+				
+			</div>
+			
+			
+			<div data-role="page" id="worship" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Worship</h3>
+						<p>This ministry entails leading in singing and perfomring songs during the service.</p>
+					</li>
+						<nav>
+						<a button type="button" href="#tech" data-transition='slide' data-back='true'>NEXT MINISTRY</a>
+						</nav>	
+					<li data-theme="d"><a href="#ssams"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>Sherry Sams</h3></center></a></li>
+					<li data-theme="d"><a href="#dslone"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>David Slone</h3></center></a></li>
+					<li data-theme="d"><a href="#ktoft"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>Kim Toft</h3></center></a></li>								
+				</ul>
+				
+			</div>
+			
+						
+			<div data-role="page" id="tech" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Tech</h3>
+						<p>This ministry entails running the audio and video equipment during the service.</p>
+					</li>
+						<nav>
+						<a button type="button" href="#nursery" data-transition='slide' data-back='true'>NEXT MINISTRY</a>
+						</nav>	
+					<li data-theme="d"><a href="#mtoft"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Matt Toft</h3></center></a></li>
+					<li data-theme="d"><a href="#ckrenzel"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Craig Krenzel</h3></center></a></li>
+					<li data-theme="d"><a href="#mjenkins"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Michael Jenkins</h3></center></a></li>								
+				</ul>
+				
+			</div>
+			
+			<div data-role="page" id="nursery" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Nursery</h3>
+						<p>This ministry entails teaching and caring for children from newborns to kindergarten during the service.</p>
+					</li>
+					<nav>
+						<a button type="button" href="index.html" data-transition='slide' data-back='true'>HOME</a>
+						</nav>	
+					<li data-theme="d"><a href="#rwilliams"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Rosemary Williams</h3></center></a></li>
+					<li data-theme="d"><a href="#jbowman"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Joann Bowman</h3></center></a></li>
+					<li data-theme="d"><a href="#dannis"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Dan Annis</h3></center></a></li>								
+				</ul>
+				
+			</div>
+			
+			<div data-role="page" id="all" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+			
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>All Members</h3>
+						<p>This page lists all members currently in a ministry.</p>
+					</li>
+					<li data-theme="d"><a href="#egeorge"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>Eddie George</h3></center></a></li>
+					<li data-theme="d"><a href="#bhoying"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>Bobby Hoying</h3></center></a></li>
+					<li data-theme="d"><a href="#tglenn"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>Terry Glenn</h3></center></a></li>
+					<li data-theme="d"><a href="#opace"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>Orlando Pace</h3></center></a></li>
+					<li data-theme="d"><a href="#jgermaine"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>Joe Germaine</h3></center></a></li>
+					<li data-theme="d"><a href="#dboston"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>David Boston</h3></center></a></li>	
+					<li data-theme="d"><a href="#ssams"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>Sherry Sams</h3></center></a></li>
+					<li data-theme="d"><a href="#dslone"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>David Slone</h3></center></a></li>
+					<li data-theme="d"><a href="#ktoft"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>Kim Toft</h3></center></a></li>		
+					<li data-theme="d"><a href="#mtoft"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Matt Toft</h3></center></a></li>
+					<li data-theme="d"><a href="#ckrenzel"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Craig Krenzel</h3></center></a></li>
+					<li data-theme="d"><a href="#mjenkins"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Michael Jenkins</h3></center></a></li>	
+					<li data-theme="d"><a href="#rwilliams"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Rosemary Williams</h3></center></a></li>
+					<li data-theme="d"><a href="#jbowman"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Joann Bowman</h3></center></a></li>
+					<li data-theme="d"><a href="#dannis"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Dan Annis</h3></center></a></li>									
+				</ul>
+				
+			</div>
+			
+					<div data-role="page" id="impressionsleader" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Impressions Leader</h3>
+						<p>This ministry entails greeting at the entrance of the church and staffing the information desk.</p>
+					</li>
+					<li data-theme="d"><a href="#stsams"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>Stephen Sams</h3></center></a></li>
+					<li data-theme="d"><a href="#jcooper"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>John Cooper</h3></center></a></li>									
+				</ul>
+				
+			</div>
+			
+			<div data-role="page" id="usherleader" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Usher Leader</h3>
+						<p>This ministry entails handing out bulletins collecting offering and distributing communion.</p>
+					</li>
+					<li data-theme="d"><a href="#swells"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>Scott Wells</h3></center></a></li>
+					<li data-theme="d"><a href="#ebruce"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>Earl Bruce</h3></center></a></li>
+									
+				</ul>
+				
+			</div>
+			
+			
+			<div data-role="page" id="worshipleader" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Worship Leader</h3>
+						<p>This ministry entails leading in singing and perfomring songs during the service.</p>
+					</li>
+					<li data-theme="d"><a href="#jromano"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>Josh Romano</h3></center></a></li>
+					<li data-theme="d"><a href="#whayes"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>Woody Hayes</h3></center></a></li>
+										
+				</ul>
+				
+			</div>
+			
+						
+			<div data-role="page" id="techleader" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Tech Leader</h3>
+						<p>This ministry entails running the audio and video equipment during the service.</p>
+					</li>
+					<li data-theme="d"><a href="#jsams"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Jon Sams</h3></center></a></li>
+					<li data-theme="d"><a href="#pbrown"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Paul Brown</h3></center></a></li>
+								
+				</ul>
+				
+			</div>
+			
+			<div data-role="page" id="nurseryleader" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Nursery Leader</h3>
+						<p>This ministry entails teaching and caring for children from newborns to kindergarten during the service.</p>
+					</li>
+					<li data-theme="d"><a href="#helcook"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Heather Elcook</h3></center></a></li>
+					<li data-theme="d"><a href="#lfickell"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Luke Fickell</h3></center></a></li>
+						
+				</ul>
+				
+			</div>
+			
+			<div data-role="page" id="allleader" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="img/logo.gif"/> </center>
+				</div>
+					
+			
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>All Leaders</h3>
+						<p>This page lists all leaders currently in a ministry.</p>
+					</li>
+					<li data-theme="d"><a href="#stsams"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>Stephen Sams</h3></center></a></li>
+					<li data-theme="d"><a href="#jcooper"><img src="img/Impressions.gif" class="ui-li-icon" /> 
+						<center><h3>John Cooper</h3></center></a></li>
+					<li data-theme="d"><a href="#swells"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>Scott Wells</h3></center></a></li>
+					<li data-theme="d"><a href="#ebruce"><img src="img/Usher.gif" class="ui-li-icon" /> 
+						<center><h3>Earl Bruce</h3></center></a></li>
+					<li data-theme="d"><a href="#jromano"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>Josh Romano</h3></center></a></li>
+					<li data-theme="d"><a href="#whayes"><img src="img/Worship.gif" class="ui-li-icon" /> 
+						<center><h3>Woody Hayes</h3></center></a></li>
+						<li data-theme="d"><a href="#jsams"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Jon Sams</h3></center></a></li>
+					<li data-theme="d"><a href="#pbrown"><img src="img/Tech.gif" class="ui-li-icon" /> 
+						<center><h3>Paul Brown</h3></center></a></li>
+					<li data-theme="d"><a href="#helcook"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Heather Elcook</h3></center></a></li>
+					<li data-theme="d"><a href="#lfickell"><img src="img/Nursery.gif" class="ui-li-icon" /> 
+						<center><h3>Luke Fickell</h3></center></a></li>
+															
+				</ul>
+				
+			</div>
+
+				
+				
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+			
+	
+
+	</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<!-- Matt Toft ASD1201 Proj 1 -->
+
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>Axis Church</title>
+		<meta name="description" content="" />
+		<meta name="keyword" content="" />
+		<meta name="robots" content="" />
+	
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+		<meta http-equiv="cleartype" content="on">
+	
+		<link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>	
+		<link rel="stylesheet" type="text/css" href="css/indexstyle.css" />
+		<script src="js/libs/jquery.js" type="text/javascript"></script>
+		<script src="js/libs/jquery.validate.js" type="text/javascript"></script>
+		<script src="js/libs/modernizr.custom.min.js"></script>
+		
+			</head>
+	
+		
+	<body>
+		
+		<!--Header -->
+			<div data-role="page" id="additem" data-add-back-btn="true" data-theme="a">
+
+			
+		<center>	<div data-role="header" id="header">
+				<center><img src="img/logo.gif" /></center>
+				<a href="index.html" data-rel="back" data-icon="home" class="ui-btn-left" data-theme="a">Home</a>
+			</div>
+			
+			
+			
+			<div id='minform' data-role="content">
+				
+			<h2>Sign Up For a Ministry</h2>
+				
+			<form class="cmxform" method='post' action="" id="minsignup">
+			<fieldset>
+					
+				<div data-role="fieldcontain">
+					<label for="fname">First Name</label>
+					<input type="text" data-theme='c' name="fname" id="fname" class="required" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="lname">Last Name</label>
+					<input type="text"  data-theme='c' name="lname" id="lname" class="required" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="email">Email</label>
+					<input type="email" data-theme='c' name="email" id="email" class="required" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="tel">Phone Number</label>
+					<input type="tel"  data-theme='c' name="tel" id="tel" placeholder="555-555-5555" class="required" />
+				</div>
+		<div  data-role="fieldcontain">
+					<label for="sex">Sex</label>
+				<label data-theme="d" for="male">Male </label><input type="radio" value="Male" id="male" name="sex" />
+				<label data-theme="d" for="female">Female </label><input type="radio" checked value="Female" id="female" name="sex" /><br />
+				</div>
+				<div data-role="fieldcontain">
+					<label for="months">Months Attending</label>
+					<p id="timeattending">Please indicate the number of months you have been attending axis</p>
+					<input type="range" min="1.00" max="50.00" step="1" name="months" id="attending" value="2" data-theme="b" />
+				</div>
+				
+			<div data-role="fieldcontain">
+					<label> Are You An Axis Partner?</label>
+				<input type="checkbox" id="partner" name="partner" checked=""/>
+				<label for="partner" data-theme="d">Yes<label>
+			
+			</div><br/>
+			
+	
+				
+				<div id='select' data-role="fieldcontain">
+					<label for="ministries">Ministries</label>
+					<p id="minselect">Please Select the Ministry You Are Interested In </p>
+						<select name="ministry" id="dropdown" data-theme="d"  data-native-menu="false" class="required" >
+							<option data-placeholder="true" value="">Please Select One</option>
+							<optgroup label="Ministries">
+								<option value="Impressions">Impressions</option>
+								<option value="Usher">Usher</option>
+								<option value="Worship">Worship</option>
+								<option value="Tech">Tech</option>
+								<option value="Nursery">Nursery</option>
+								
+											</optgroup>
+						</select>
+					</label>
+				</div>
+
+		
+				<div id='subres' data-role="fieldcontain">
+					<input type="submit" id='submit' value="Submit" data-theme="c" data-icon="check" data-iconpos="right" />
+					<input type="reset" value="Clear Form" data-theme="d" data-icon="back" data-iconpos="right" />
+				</div>
+				
+		
+				
+			</fieldset>	
+				
+			</form>
+			<div id="list">
+					<div id="edit-item-button" style="display: none;">
+				<input type="button" id="edit-item" value="Save Changes" />
+			</div></div>
+			</div>
+			
+			<div data-role="collapsible" data-theme='c'>
+							<h6>Administration</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>											
+						<a id="displaybutton" data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="#">
+						Display Volunteers</a>
+						</li>
+					
+						<li>
+						<a href="#" data-theme="a" data-role="button" onclick="clearData(); location.reload();">Clear Local Storage</a>
+						</li>
+					</ul>
+					<div id='display'></div>
+					</div>
+			
+			<div data-role="footer" data-theme="a">
+				<center><p id="closing">Matt Toft | ASD1202</p></center>
+			</div>	
+			
+		</div>
+		
+		<!--Data links -->
+		<a href="#" id="clear">Clear Stored Data</a>
+		<a href="#" id="displayLink">Display Data</a>
+		<a href="additem.html" id="addnew" style="display:none;">Add New Item</a>
+		
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+	<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>	
+	<script src="js/main.js" type="text/javascript"></script>
+	
+	
+		</div> 
+		<footer>
+			<small>&copy;2011 Matt Toft ASD1202</small>
+		</footer>
+	</body>
+</html>

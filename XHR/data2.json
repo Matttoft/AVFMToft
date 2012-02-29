@@ -1,0 +1,54 @@
+{"impteam":[
+       {
+            "fname":"Eddie",
+            "lname":"Geroge",
+           "email":"egeorge@cinci.rr.com",
+            "tel":"513-555-0527",
+            "sexval":"Male",
+            "ministry":"Impressions",
+            "memtype":"Yes"
+           },
+        {
+               "fname":"Bobby",
+            "lname":"Hoying",
+            "email":"bhoying@cinci.rr.com",
+            "tel":"513-555-0516",
+            "sexval":"Male",
+            "ministry":"Impressions",
+            "memtype":"Yes"
+           
+        },
+           {
+        	"fname":"Terry",
+            "lname":"Glenn",
+            "email":"tglenn@cinci.rr.com",
+            "tel":"513-555-0583",
+            "sexval":"Male",
+            "ministry":"Tech",
+            "memtype":"Yes"
+           
+        	},
+         {
+        	"fname":"Stephen",
+            "lname":"Sams",
+            "email":"ssams@cinci.rr.com",
+            "tel":"513-555-0501",
+            "sexval":"Male",
+            "ministry":"Impressions",
+            "memtype": "Yes"
+           
+        },
+           {
+        	"fname" :"John",
+            "lname":"Cooper",
+            "email":"pbrown@cinci.rr.com",
+            "tel":"513-555-8899",
+            "sexval":"Male",
+            "ministry":"Impressions",
+            "memtype":"Yes"
+           
+        }
+    
+]
+}
+

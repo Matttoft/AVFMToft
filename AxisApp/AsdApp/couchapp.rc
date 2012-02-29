@@ -1,0 +1,10 @@
+{
+  "env": {
+    "local": {
+      "db": "http://127.0.0.1:5984/axisapp"
+    },
+    "cloudant": {
+      "db": "https://matttoft:Sabrina2009@matttoft.cloudant.com/axisapp"
+    }
+  }
+}

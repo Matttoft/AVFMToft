@@ -1,0 +1,75 @@
+/* CSS for MIU 111
+ * Matt Toft
+ */
+
+label.error{
+
+display:block;  
+margin: 10px 0;  
+color: #cc0000;
+}
+
+
+a {
+	text-align: center;
+
+}
+
+p{
+	text-align: center;
+	font-size: 10px;
+}
+
+
+#cta{
+	text-align: center;
+}
+
+#email{
+	text-align: center;
+	color: blue;
+}
+
+body {
+	font-family: Arial, Helvectica, san-serif;
+	margin: auto;
+	padding: 10px;
+	background: #1C1A17;
+	color: #D2CDBD;#content{
+	width: auto;
+	height: auto;
+	overflow: scroll;
+	text-align: center;
+}
+}
+
+h1 {
+	color: #D2CDBD;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px;
+	margin: 0px;
+	text-align: center;
+}
+h2 {
+	padding: 0px 0px 0px 0px;
+	color: #D2CDB5;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+ h5{
+ 	text-align: center;
+ 	font-weight: bold;
+ 	color:#d7bb54
+ 	
+ }
+
+
+	
+footer {
+	text-align: center;
+}
+

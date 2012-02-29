@@ -1,0 +1,54 @@
+{"techteam":[
+       {
+            "fname":"Matt",
+            "lname":"Toft",
+           "email":"mtoft@cinci.rr.com",
+            "tel":"513-555-0559",
+            "sexval":"Male",
+            "ministry":"Tech",
+            "memtype":"Yes"
+           },
+        {
+               "fname":"Craig",
+            "lname":"Krenzel",
+            "email":"ckrenzel@cinci.rr.com",
+            "tel":"513-555-0553",
+            "sexval":"Male",
+            "ministry":"Tech",
+            "memtype":"Yes"
+           
+        },
+           {
+        	"fname":"Michael",
+            "lname":"Jenkins",
+            "email":"mjenkins@cinci.rr.com",
+            "tel":"513-555-0550",
+            "sexval":"Male",
+            "ministry":"Tech",
+            "memtype":"Yes"
+           
+        	},
+         {
+        	"fname":"Jon",
+            "lname":"Sams",
+            "email":"jsams@cinci.rr.com",
+            "tel":"513-555-0555",
+            "sexval":"Male",
+            "ministry":"Tech",
+            "memtype": "Yes"
+           
+        },
+           {
+        	"fname" :"Paul",
+            "lname":"Brown",
+            "email":"pbrown@cinci.rr.com",
+            "tel":"513-555-0554",
+            "sexval":"Male",
+            "ministry":"Tech",
+            "memtype":"Yes"
+           
+        }
+    
+]
+}
+
