@@ -1,0 +1,16 @@
+#launch ul {
+	list-style-type: none;
+	}
+	
+body {
+	font-family: Arial, Helvectica, san-serif;
+	width: 571px;
+	margin: auto;
+	padding: 10px;
+	background: #1C1A17;
+	color: #D2CDBD;#content{
+	width: 480px;
+	height: 690px;
+	overflow: scroll;
+}
+
