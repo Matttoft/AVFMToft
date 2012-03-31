@@ -31,7 +31,7 @@ $('#submit').bind('click', function(){
     	"dropdown": dropdown
     };
 	console.log(item);
-	$.couch.db("AxisApp").saveDoc(item, {
+	$.couch.db("axisapp").saveDoc(item, {
 		success: function(data) {
 			console.log(data);
 			alert("Thank You. A ministry leader will contact you soon.");

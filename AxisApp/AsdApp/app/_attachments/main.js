@@ -94,9 +94,6 @@ function getItems() {
 		if(dropdown == "Impressions") {
 			minImage = "Impressions.gif";
 		}
-		if(dropdown == "Usher") {
-			minImage = "Usher.gif";
-		}
 		if(dropdown == "Worship") {
 			minImage = "Worship.gif";
 		}
